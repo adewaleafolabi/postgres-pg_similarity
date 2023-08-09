@@ -1,4 +1,4 @@
-FROM postgres:11-alpine
+FROM postgres:13.4-alpine
 
 RUN apk add --update --no-cache git build-base llvm clang
 RUN git clone https://github.com/eulerto/pg_similarity.git /pg_similarity
